@@ -3,6 +3,7 @@ package edu.purdue.carlso70.calculator;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.view.Display;
 import android.widget.TextView;
 import android.view.View.*;
@@ -22,11 +23,13 @@ public class CalculatorView implements CalculatorViewInterface {
     }
 
     public void display(String val){
+        display.setTextColor(Color.WHITE);
         display.setText(val);
     }
 
     public void invalid() {
-        System.out.println("error");
+        display.setTextColor(Color.RED);
+        System.out.println("\"invalid\" method called");
     }
 
 }
