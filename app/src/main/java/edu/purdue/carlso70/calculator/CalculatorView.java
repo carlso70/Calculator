@@ -8,6 +8,7 @@ import android.view.Display;
 import android.widget.TextView;
 import android.view.View.*;
 
+
 /**
  * Created by panth_000 on 12/2/2015.
  */
@@ -22,8 +23,8 @@ public class CalculatorView implements CalculatorViewInterface {
         display("");
     }
 
-    public void display(String val){
-        display.setTextColor(Color.WHITE);
+    public void display(String val) {
+        display.setTextColor(Color.BLACK);
         display.setText(val);
     }
 

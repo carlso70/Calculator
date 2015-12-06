@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
         for (int i = 0; i < 10; i++) {
             final int anonymous = i;
-            int resId = getResources().getIdentifier("button"+i,"id",getPackageName());
+            int resId = getResources().getIdentifier("button" + i, "id", getPackageName());
             Button button = (Button) findViewById(resId);
             button.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    c.inputDigit((char)(48 + anonymous));
+                    c.inputDigit((char) (48 + anonymous));
                 }
             });
         }
